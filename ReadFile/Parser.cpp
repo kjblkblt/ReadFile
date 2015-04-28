@@ -22,8 +22,10 @@ void Parser::ParseSBG(string filename, map<int, Store>* stores)
 				}
 				s->setFiscalMonth(items[1]);
 				s->setTotalPoints (stoi(items[2]));
-				s->
+				s->setTotalRank(stoi(items[3]));
+				s->setTotServ2Trgt(stod(items[4]));
 			}
+
 
 		}
 	}
