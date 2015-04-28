@@ -62,19 +62,20 @@ void Store::setTotServ2TrgtRank(int rank)
 {
 	_totServ2TrgtRank = rank;
 }
-double Store::gettotServ2TrgtRank()
+double Store::getTotServ2TrgtRank()
 {
-	return _totServ2Trg;
+	return _totServ2TrgtRank;
 }
 		
 void Store::set_TTRank(int TTRank)
 {
 	_ttRank = TTRank;
 }
-		int Store::get_TTRank()
-		{
-			return _ttRank;
-		}
+
+int Store::get_TTRank()
+{
+	return _ttRank;
+}
 
 
 void Store::printInfo()
