@@ -35,6 +35,8 @@ public:
 	double getTT();
 	void set_TTRank(int TTRank);
 	int get_TTRank();
+	void setCertified(double cert);
+	double getCertified();
 
 	void printInfo();
 private:

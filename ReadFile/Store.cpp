@@ -77,6 +77,17 @@ int Store::get_TTRank()
 	return _ttRank;
 }
 
+void Store::setCertified(double cert)
+{
+	_certified = cert;
+}
+
+
+double Store::getCertified()
+{
+	return _certified;
+}
+
 
 void Store::printInfo()
 {
