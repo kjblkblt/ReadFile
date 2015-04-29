@@ -76,7 +76,7 @@ double Store::getRenewRev()
 }
 void Store::setRevRank(int RevRank)
 {
-	_renewRevRank;
+	_renewRevRank = RevRank;
 }
 int Store::getRevRank()
 {
@@ -84,28 +84,56 @@ int Store::getRevRank()
 }
 void Store::setNPS(double NPS)
 {
-	_nps;
+	_nps = NPS;
 }
 double Store::getNPS()
 {
 	return _nps;
 }
+void Store::setNPSRank(int NPSRank)
+{
+	_npsRank = NPSRank;
+}
+int Store::getNPSRank()
+{
+	return _npsRank;
+}
+void Store::setTT(double TT)
+{
+	_tt = TT;
+}
+double Store::getTT()
+{
+	return _tt;
+}
 void Store::set_TTRank(int TTRank)
 {
 	_ttRank = TTRank;
 }
-
 int Store::get_TTRank()
 {
 	return _ttRank;
 }
-
+void Store::setUtilization(double Comb_Util)
+{
+	_utilization = Comb_Util;
+}
+double Store::getUtilization()
+{
+	return _utilization;
+}
+void Store::setATUtilization(double ATUtil)
+{
+	_atUtilization = ATUtil;
+}
+double Store::getATUtilization()
+{
+	return _atUtilization;
+}
 void Store::setCertified(double cert)
 {
 	_certified = cert;
 }
-
-
 double Store::getCertified()
 {
 	return _certified;

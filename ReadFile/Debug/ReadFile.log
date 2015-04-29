@@ -1,4 +1,4 @@
-﻿Build started 4/28/2015 1:37:41 AM.
+﻿Build started 4/29/2015 9:25:49 AM.
      1>Project "C:\Users\Kim\documents\visual studio 2013\Projects\ReadFile\ReadFile\ReadFile.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Store.cpp
@@ -9,13 +9,9 @@
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Kim\documents\visual studio 2013\Projects\ReadFile\Debug\ReadFile.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Kim\documents\visual studio 2013\Projects\ReadFile\Debug\ReadFile.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Kim\documents\visual studio 2013\Projects\ReadFile\Debug\ReadFile.lib" /MACHINE:X86 Debug\Main.obj
          Debug\Parser.obj
          Debug\Store.obj
-     1>Parser.obj : error LNK2019: unresolved external symbol "public: void __thiscall Store::setNPSRank(int)" (?setNPSRank@Store@@QAEXH@Z) referenced in function "public: void __thiscall Parser::ParseSBG(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::map<int,class Store,struct std::less<int>,class std::allocator<struct std::pair<int const ,class Store> > > *)" (?ParseSBG@Parser@@QAEXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PAV?$map@HVStore@@U?$less@H@std@@V?$allocator@U?$pair@$$CBHVStore@@@std@@@3@@3@@Z)
-     1>Parser.obj : error LNK2019: unresolved external symbol "public: void __thiscall Store::setUtilization(double)" (?setUtilization@Store@@QAEXN@Z) referenced in function "public: void __thiscall Parser::ParseSBG(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::map<int,class Store,struct std::less<int>,class std::allocator<struct std::pair<int const ,class Store> > > *)" (?ParseSBG@Parser@@QAEXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PAV?$map@HVStore@@U?$less@H@std@@V?$allocator@U?$pair@$$CBHVStore@@@std@@@3@@3@@Z)
-     1>Parser.obj : error LNK2019: unresolved external symbol "public: void __thiscall Store::setATUtilization(double)" (?setATUtilization@Store@@QAEXN@Z) referenced in function "public: void __thiscall Parser::ParseSBG(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::map<int,class Store,struct std::less<int>,class std::allocator<struct std::pair<int const ,class Store> > > *)" (?ParseSBG@Parser@@QAEXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PAV?$map@HVStore@@U?$less@H@std@@V?$allocator@U?$pair@$$CBHVStore@@@std@@@3@@3@@Z)
-     1>Parser.obj : error LNK2019: unresolved external symbol "public: void __thiscall Store::setTT(double)" (?setTT@Store@@QAEXN@Z) referenced in function "public: void __thiscall Parser::ParseSBG(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::map<int,class Store,struct std::less<int>,class std::allocator<struct std::pair<int const ,class Store> > > *)" (?ParseSBG@Parser@@QAEXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PAV?$map@HVStore@@U?$less@H@std@@V?$allocator@U?$pair@$$CBHVStore@@@std@@@3@@3@@Z)
-     1>C:\Users\Kim\documents\visual studio 2013\Projects\ReadFile\Debug\ReadFile.exe : fatal error LNK1120: 4 unresolved externals
-     1>Done Building Project "C:\Users\Kim\documents\visual studio 2013\Projects\ReadFile\ReadFile\ReadFile.vcxproj" (Build target(s)) -- FAILED.
+         ReadFile.vcxproj -> C:\Users\Kim\documents\visual studio 2013\Projects\ReadFile\Debug\ReadFile.exe
+     1>Done Building Project "C:\Users\Kim\documents\visual studio 2013\Projects\ReadFile\ReadFile\ReadFile.vcxproj" (Build target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:02.95
+Time Elapsed 00:00:02.62
