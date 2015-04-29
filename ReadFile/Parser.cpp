@@ -148,23 +148,26 @@ void Parser::ParseARA(string filename, map<int, Store>* stores)
 				if (s->storeNumber() != storeNum){
 					s->setStoreNumber(storeNum);
 				}
-				s->setNPSKeepClient(stod(items[1]));
-				s->setNPSFollowUP(stod(items[2]));
-				s->setAJUAppl(stoi(items[3]));
-				s->setAJUAttach(stoi(items[4]));
-				s->setAJUPercent(stod(items[5]));
-				s->setAJUTT(stod(items[6]));
-				s->setAJUCost(stod(items[7]));
-				s->setOverallC2S(stod(items[8]));
-				s->setServiceC2S(stod(items[9]));
-				s->setDTVC2S(stod(items[10]));
-				s->setUPSC2S(stod(items[11]));
-				s->setRec2PU(stod(items[12]));
-				s->setStoreComp2PU(stod(items[13]));
-				s->setSWTags(stoi(items[14]));
-				s->setSWPercent(stod(items[15]));
-				s->setJOTags(stoi(items[16]));
-				s->setJOPercent(stod(items[17]));
+				s->setNPSTT(stod(items[1]));
+				s->setNPSServQual(stod(items[2]));
+				s->setRenewTT(stod(items[3]));
+				s->setNewTT(stod(items[4]));
+				s->setSOOlder2(stoi(items[5]));
+				s->setSOOlder7(stoi(items[6]));
+				s->setHP2StoreTT(stod(items[7]));
+				s->setHP2StoreCmplt(stoi(items[8]));
+				s->setHP2StoreServ(stoi(items[9]));
+				s->setHP2StoreSucc(stod(items[10]));
+				s->setGSPPhone(stod(items[11]));
+				s->setTotalTags(stoi(items[12]));
+				s->setCmpltsPerDay(stod(items[13]));
+				s->setGSPSO(stod(items[14]));
+				s->setCODSO(stod(items[15]));
+				s->setGSTSSO(stod(items[16]));
+				s->setStoreRedo(stod(items[17]));
+				s->setOtherRedo(stod(items[18]));
+				s->setClientRedo(stod(items[19]));
+				s->setAgentRedo(stod(items[20]));
 			}
 		}
 	}
