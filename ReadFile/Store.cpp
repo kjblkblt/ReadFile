@@ -65,8 +65,31 @@ void Store::setTotServ2TrgtRank(int rank)
 double Store::getTotServ2TrgtRank()
 {
 	return _totServ2TrgtRank;
+}	
+void Store::setRenewRev(double renewrev)
+{
+	_renewRev = renewrev;
 }
-		
+double Store::getRenewRev()
+{
+	return _renewRev;
+}
+void Store::setRevRank(int RevRank)
+{
+	_renewRevRank;
+}
+int Store::getRevRank()
+{
+	return _renewRevRank;
+}
+void Store::setNPS(double NPS)
+{
+	_nps;
+}
+double Store::getNPS()
+{
+	return _nps;
+}
 void Store::set_TTRank(int TTRank)
 {
 	_ttRank = TTRank;
