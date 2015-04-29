@@ -3,24 +3,20 @@
 #include "Store.h"
 using namespace std;
 
-
 Store::Store()
 {
 }
-
 Store::~Store()
 {
 }
-
-int Store::storeNumber(){
+int Store::storeNumber()
+{
 	return _storeNum;
 }
-
 void Store::setStoreNumber(int s)
 {
 	_storeNum = s;
 }
-
 void Store::setFiscalMonth(string month)
 {
 	_fiscalMonth = month;

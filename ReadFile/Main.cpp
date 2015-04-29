@@ -7,19 +7,23 @@ using namespace std;
 int main()
 {
 	string SBGfilename;
+	string CAfilename;
+	string OAfilename;
+	string ARAfilename; 
 	cout << "Please enter your full file path and name:  ";
 	cin >> SBGfilename;
+	
 	map<int, Store> stores;
 	Parser P;
 	try
 	{
 		P.ParseSBG(SBGfilename, &stores);
-		
-	
+		P.ParseCA(CAfilename, &stores);
+		P.ParseOA(OAfilename, &stores);
 	}
 	catch (exception ex)
 	{
-		cout << endl << "File not found! Timmy" << endl;
+		cout << endl << ex.what() << endl;
 	}
 
 	string storeNum;
@@ -31,20 +35,4 @@ int main()
 		if (storeNum == "exit") return 0;
 		stores[stoi(storeNum)].printInfo();
 	}
-
-	//Display something
-	//SBGfilename.open;
-	//if (!SBGfilename)
-	//{
-	//	cout << "File open error!" << endl;
-	//	return 0;
-	//}
-	//getline(SBGfilename, input);
-	//while (SBGfilename)
-	//{
-	//
-	//}
-
-
-	//cout >> _renewRevRank;
 }

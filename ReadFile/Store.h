@@ -37,6 +37,8 @@ public:
 	int get_TTRank();
 	void setCertified(double cert);
 	double getCertified();
+	void setNPSKeepClient(double NPS_Keep) { _NPSKeepClient = NPS_Keep;  };
+	double getNPSKeepClient() { return _NPSKeepClient; }
 
 	void printInfo();
 private:
@@ -55,4 +57,5 @@ private:
 	double _tt;
 	int _ttRank;
 	double _certified;
+	double _NPSKeepClient;
 };

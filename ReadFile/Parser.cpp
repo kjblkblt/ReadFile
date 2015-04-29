@@ -40,8 +40,20 @@ void Parser::ParseSBG(string filename, map<int, Store>* stores)
 		}
 	}
 	else {
-		throw exception("File not found!");
+		string error = "File not found! - " + filename;
+		throw exception(error.c_str());
 	}
+}
+void Parser::ParseCA(string filename, map<int, Store>* stores)
+{
+}
+
+void Parser::ParseOA(string filename, map<int, Store>* stores)
+{
+}
+
+void Parser::ParseARA(string filename, map<int, Store>* stores)
+{
 }
 
 void Parser::splitString(string str, char delim, vector<string>* tokens)
