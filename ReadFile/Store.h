@@ -39,6 +39,18 @@ public:
 	double getCertified();
 	void setNPSKeepClient(double NPS_Keep) { _NPSKeepClient = NPS_Keep;  };
 	double getNPSKeepClient() { return _NPSKeepClient; }
+	void setNPSFollowUP(double NPS_Follow) { _NPSFollowUp = NPS_Follow; };
+	double getNPSFollowUp() { return _NPSFollowUp; }
+	void setAJUAppl(int AJU_Appl) { _AJUAppl = AJU_Appl; };
+	int getAJUAppl() { return _AJUAppl; }
+	void setAJUAttach(int AJU_Attach) { _AJUAttach = AJU_Attach; };
+	int getAJUAttach() { return _AJUAttach; }
+	void setAJUPercent(double AJUcent) { _AJUPercent = AJUcent; };
+	double getAJUPercent() { return _AJUPercent; }
+	void setAJUTT(double AJU_TT) { _AJUTT = AJU_TT; };
+	double getAJUTT(){ return _AJUTT; }
+	void set
+
 
 	void printInfo();
 private:
@@ -58,4 +70,20 @@ private:
 	int _ttRank;
 	double _certified;
 	double _NPSKeepClient;
+	double _NPSFollowUp;
+	int _AJUAppl;
+	int _AJUAttach;
+	double _AJUPercent;
+	double _AJUTT;
+	double _AJUCost;
+	double _Create2Ship;
+	double _ServiceC2S;
+	double _DTVC2S;
+	double _UPSC2S;
+	double _Rec2PU;
+	double _StoreRec2PU;
+	int _SWTags;
+	double _SWPercent;
+	int _JOTags;
+	double _JOPercent;
 };
