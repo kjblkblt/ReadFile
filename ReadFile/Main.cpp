@@ -10,6 +10,8 @@ int main()
 	string CAfilename;
 	string OAfilename;
 	string ARAfilename; 
+	//int choice;
+
 	cout << "Please enter your full file path and name:  ";
 	cin >> SBGfilename;
 	
@@ -20,6 +22,7 @@ int main()
 		P.ParseSBG(SBGfilename, &stores);
 		P.ParseCA(CAfilename, &stores);
 		P.ParseOA(OAfilename, &stores);
+		P.ParseARA(ARAfilename, &stores);
 	}
 	catch (exception ex)
 	{

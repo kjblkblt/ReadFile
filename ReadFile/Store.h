@@ -70,7 +70,81 @@ public:
 	void setJOTags(int JOTags) { _JOTags = JOTags; };
 	int getJOTags(){ return _JOTags; }
 	void setJOPercent(double JOPercent) { _JOPercent = JOPercent; };
-	double getPercent() { return _JOPercent; }
+	double getJOPercent() { return _JOPercent; }
+	void setNPSTrouble(double NPSTrouble) { _NPSTrouble = NPSTrouble; };
+	double getNPSTrouble() { return _NPSTrouble; }
+	void setNPSDemo(double NPSDemo) { _NPSDemo = NPSDemo; };
+	double getNPSDemo() { return _NPSDemo; }
+	void setNPSKnow(double NPSKnow) { _NPSKnow = NPSKnow; };
+	double getNPSKnow(){ return _NPSKnow; }
+	void setNOVAUse(double NOVAUse) { _NOVAUse = NOVAUse; };
+	double getNOVAUse(){ return _NOVAUse; }
+	void setTotRenew(double TotRenew) { _TotRenew = TotRenew; };
+	double getTotRenew() { return _TotRenew; }
+	void setTotRenewGoal(double TotRenewGoal) { _TotRenewGoal = TotRenewGoal; };
+	double getTotRenewGoal() { return _TotRenewGoal; }
+	void setTotRenewPercent(double TotRenewPercent) { _TotRenewPercent = TotRenewPercent; };
+	double getTotRenewPercent() { return _TotRenewPercent; }
+	void setRenew81Mix(double Renew81Mix) { _Renew81Mix = Renew81Mix; };
+	double getRenew81Mix() { return _Renew81Mix; }
+	void setRenew404Mix(double Renew404Mix) { _Renew404Mix = Renew404Mix; };
+	double getRenew404Mix() { return _Renew404Mix; }
+	void setShip2CTake(double Ship2CTake) { _Ship2CTake = Ship2CTake; };
+	double getShip2CTake() { return _Ship2CTake; }
+	void setShip2CElig(int Ship2CElig) { _Ship2CElig = Ship2CElig; };
+	int getShip2CElig(){ return _Ship2CElig; }
+	void setDBU2GSTS(double DBU2GSTS) { _DBU2GSTS = DBU2GSTS; };
+	double getDBU2GSTS(){ return _DBU2GSTS; }
+	void setNewPCAttach(double NewPCAttach) { _NewPCAttach = NewPCAttach; };
+	double getNewPCAttach() { return _NewPCAttach; }
+	void setGSTSAttach(double GSTSAttach) { _GSTSAttach = GSTSAttach; };
+	double getGSTSAttach(){ return _GSTSAttach; }
+	void setSetupAttach(double SetupAttach) { _SetupAttach = SetupAttach; };
+	double getSetupAttach(){ return _SetupAttach; }
+	void setRestoreAttach(double RestoreAttach){ _RestoreAttach = RestoreAttach; };
+	double getRestoreAttach(){ return _RestoreAttach; }
+	void setTotServAttach(double TotServAttach) { _TotServAttach = TotServAttach; };
+	double getTotServAttach(){ return _TotServAttach; }
+	void setNPSTT(double NPSTT){ _NPSTT = NPSTT; };
+	double getNPSTT(){ return _NPSTT; }
+	void setNPSServQual(double NPSServQual){ _NPSServQual = NPSServQual; };
+	double getNPSServQual() { return _NPSServQual; }
+	void setRenewTT(double RenewTT){ _RenewTT = RenewTT; };
+	double getRenewTT() { _RenewTT; }
+	void setNewTT(double NewTT){ _NewTT = NewTT; };
+	double getNewTT() { return _NewTT; }
+	void setSOOlder2(int SOOlder2){ _SOOlder2 = SOOlder2; };
+	int getSOOlder2() { return _SOOlder2; }
+	void setSOOlder7(int SOOlder7){ _SOOlder7 = SOOlder7; };
+	int getSOOlder7() { return _SOOlder7; }
+	void setHP2StoreTT(double HP2StoreTT){ _HP2StoreTT = HP2StoreTT; };
+	double getHP2StoreTT() { return _HP2StoreTT; }
+	void setHP2StoreCmplt(int HP2StoreCmplt){ _HP2StoreCmplt = HP2StoreCmplt; };
+	int getHP2StoreCmplt() { return _HP2StoreCmplt; }
+	void setHP2StoreServ(int HP2StoreServ){ _HP2StoreServ = HP2StoreServ; };
+	int getHP2StoreServ(){ return _HP2StoreServ; }
+	void setHP2StoreSucc(double HP2StoreSucc){ _HP2StoreSucc = HP2StoreSucc; };
+	double getHP2StoreSucc(){ return _HP2StoreSucc; }
+	void setGSPPhone(double GSPPhone){ _GSPPhoneScreen = GSPPhone; };
+	double getGSPPhone(){ return _GSPPhoneScreen; }
+	void setTotalTags(int TotalTags){ _TotalTags = TotalTags; };
+	int getTotalTags(){ _TotalTags; }
+	void setCmpltsPerDay(double CmpltsPerDay){ _CmpltsPerDay = CmpltsPerDay; };
+	double getCmpltsPerDay(){ return _CmpltsPerDay; }
+	void setGSPSO(double GSPSO){ _GSPSO = GSPSO; };
+	double getGSPSO() { return _GSPSO; }
+	void setCODSO(double CODSO){ _CODSO = CODSO; };
+	double getCODSO(){ return _CODSO; }
+	void setGSTSSO(double GSTSSO){ _GSTSSO = GSTSSO; };
+	double getGSTSSO(){ return _GSTSSO; }
+	void setStoreRedo(double StoreRedo){ _StoreRedo = StoreRedo; };
+	double getStoreRedo(){ return _StoreRedo; }
+	void setOtherRedo(double OtherRedo){ _OtherRedo = OtherRedo; };
+	double getOtherRedo(){ return _OtherRedo; }
+	void setClientRedo(double CllientRedo){ _ClientRedo = CllientRedo; };
+	double getClientRedo(){ _ClientRedo; }
+	void setAgentRedo(double AgentRedo){ _AgentRedo = AgentRedo; };
+	double getAgentRedo(){ return _AgentRedo; }
 	void printInfo();
 private:
 	int _storeNum;
@@ -105,4 +179,41 @@ private:
 	double _SWPercent;
 	int _JOTags;
 	double _JOPercent;
+	double _NPSTrouble;
+	double _NPSDemo;
+	double _NPSKnow;
+	double _NOVAUse;
+	double _TotRenew;
+	double _TotRenewGoal;
+	double _TotRenewPercent;
+	double _Renew81Mix;
+	double _Renew404Mix;
+	double _Ship2CTake;
+	int _Ship2CElig;
+	double _DBU2GSTS;
+	double _NewPCAttach;
+	double _GSTSAttach;
+	double _SetupAttach;
+	double _RestoreAttach;
+	double _TotServAttach;
+	double _NPSTT;
+	double _NPSServQual;
+	double _RenewTT;
+	double _NewTT;
+	int _SOOlder2;
+	int _SOOlder7;
+	double _HP2StoreTT;
+	int _HP2StoreCmplt;
+	int _HP2StoreServ;
+	double _HP2StoreSucc;
+	double _GSPPhoneScreen;
+	int _TotalTags;
+	double _CmpltsPerDay;
+	double _GSPSO;
+	double _CODSO;
+	double _GSTSSO;
+	double _StoreRedo;
+	double _OtherRedo;
+	double _ClientRedo;
+	double _AgentRedo;
 };
