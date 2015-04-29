@@ -143,17 +143,17 @@ void Store::printInfo()
 	std::cout << "Fiscal Month: " << _fiscalMonth << endl;
 	std::cout << "Total Points: " << _totalPoints << endl;
 	std::cout << "Total Rank: " << _totalRank << endl;
-	std::cout << "TotalServe2Target: " << _totServ2Trgt << endl;
+	std::cout << "TotalServe2Target: " << _totServ2Trgt << "%" << endl;
 	std::cout << "TotalServe2TargetRank: " << _totServ2TrgtRank << endl;
-	std::cout << "Renew Revenue: " << _renewRev << endl;
+	std::cout << "Renew Revenue: " << _renewRev << "%" << endl;
 	std::cout << "Renew Revenue Rank: " << _renewRevRank << endl;
-	std::cout << "NPS: " << _nps << endl;
+	std::cout << "NPS: " << _nps << "%" << endl;
 	std::cout << "NPS Rank: " << _npsRank << endl;
-	std::cout << "Utilization: " << _utilization << endl;
-	std::cout << "AT Utilization: " << _atUtilization << endl;
-	std::cout << "Turn Time: " << _tt << endl;
+	std::cout << "Utilization: " << _utilization << "%" << endl;
+	std::cout << "AT Utilization: " << _atUtilization << "%" << endl;
+	std::cout << "Turn Time: " << _tt << " days" << endl;
 	std::cout << "Turn Time Rank: " << _ttRank << endl;
-	std::cout << "Certified: " << _certified << endl;
+	std::cout << "Certified: " << _certified << "%" << endl;
 
 	std::cout << "-------------------------" << endl;
 
