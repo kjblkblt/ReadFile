@@ -10,7 +10,6 @@ int main()
 	string CAfilename;
 	string OAfilename;
 	string ARAfilename; 
-	//int choice;
 
 	cout << "Please enter your full file path and name:  ";
 	cin >> SBGfilename;
