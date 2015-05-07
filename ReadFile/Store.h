@@ -1,10 +1,16 @@
 #include <string>
 
+#ifndef STORE_H_
+#define STORE_H_
+
 using namespace std;
 
 class Store
 {
 public:
+	static bool RevenueComparator(const Store& c1, const Store& c2);
+	static bool NPSComparator(const Store& c1, const Store& c2);
+	static bool StoreComparator(const Store& c1, const Store& c2);
 	Store();
 	~Store();
 	int storeNumber();
@@ -111,6 +117,8 @@ public:
 	double getNPSServQual() { return _NPSServQual; }
 	void setRenewTT(double RenewTT){ _RenewTT = RenewTT; };
 	double getRenewTT() { _RenewTT; }
+	void setInstoreTT(double InstoreTT) { _InstoreTT = InstoreTT; };
+	double getInstoreTT() { _InstoreTT; }
 	void setNewTT(double NewTT){ _NewTT = NewTT; };
 	double getNewTT() { return _NewTT; }
 	void setSOOlder2(int SOOlder2){ _SOOlder2 = SOOlder2; };
@@ -139,13 +147,20 @@ public:
 	double getGSTSSO(){ return _GSTSSO; }
 	void setStoreRedo(double StoreRedo){ _StoreRedo = StoreRedo; };
 	double getStoreRedo(){ return _StoreRedo; }
+	void setRedo(int Redo){ _Redo = Redo; };
+	int getRedo(){ return _Redo; }
+	void setGSTSRedo(double GSTSRedo){ _GSTSRedo = GSTSRedo; };
+	double getGSTSRedo(){ return _GSTSRedo; }
 	void setOtherRedo(double OtherRedo){ _OtherRedo = OtherRedo; };
 	double getOtherRedo(){ return _OtherRedo; }
 	void setClientRedo(double CllientRedo){ _ClientRedo = CllientRedo; };
 	double getClientRedo(){ _ClientRedo; }
 	void setAgentRedo(double AgentRedo){ _AgentRedo = AgentRedo; };
 	double getAgentRedo(){ return _AgentRedo; }
-	void printInfo();
+	void printSBG();
+	void printOA();
+	void printARA();
+	void printCA();
 private:
 	int _storeNum;
 	string _fiscalMonth;
@@ -199,6 +214,7 @@ private:
 	double _NPSTT;
 	double _NPSServQual;
 	double _RenewTT;
+	double _InstoreTT;
 	double _NewTT;
 	int _SOOlder2;
 	int _SOOlder7;
@@ -213,7 +229,11 @@ private:
 	double _CODSO;
 	double _GSTSSO;
 	double _StoreRedo;
+	int _Redo;
+	double _GSTSRedo;
 	double _OtherRedo;
 	double _ClientRedo;
 	double _AgentRedo;
 };
+
+#endif
